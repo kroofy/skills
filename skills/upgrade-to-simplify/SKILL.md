@@ -44,6 +44,16 @@ For each worthwhile opportunity, record:
 - What code, configuration, or dependency disappears.
 - Behavioral implications and required verification.
 
+Illustrate the change so a reviewer sees it without opening the diff:
+
+- A small before/after code snippet when code or configuration changes shape.
+  Show only the lines that carry the point, e.g. the `try/catch` around
+  `parse` next to the `z.validate` call that replaces it.
+- A Mermaid diagram when a flow changes, such as a removed step, hop,
+  fallback, or execution environment. Show before and after.
+
+Skip illustrations that would only restate the prose.
+
 Distinguish upgrade requirements, optional simplifications, and experiments.
 Label capabilities that predate the upgrade.
 
@@ -88,5 +98,5 @@ required checks pass; otherwise report the blocker and outstanding checks.
 
 Summarize delivered changes and verification results. When publication is
 authorized, use each opportunity record as the PR description, updated with
-actual results, and return PR links. Briefly note rejected experiments and
+actual results and keeping its snippets and diagrams, and return PR links. Briefly note rejected experiments and
 unresolved findings.
