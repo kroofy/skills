@@ -1,6 +1,7 @@
 ---
 name: upgrade-to-simplify
-description: Find code and configuration a dependency upgrade lets us remove or delegate upstream. Use when evaluating upgrade-enabled simplifications or delivering them as focused PRs.
+description: Find code and configuration a dependency upgrade lets us remove or delegate upstream, and deliver them as focused PRs.
+disable-model-invocation: true
 ---
 
 # Upgrade to Simplify
